@@ -15,9 +15,9 @@ router.post('/add-food', adminController.postaddFood);
 router.get('/foodList', adminController.getAllFood);
 
 
-router.get('/editFood/:id', adminController.getEditFood);
-router.post('/editFood/:id', adminController.postEditFood);
-router.post('/deleteFood/:id', adminController.deleteFood);
+router.get('/edit-food/:id', adminController.getEditFood);
+router.post('/edit-food/:id', adminController.postEditFood);
+router.post('/delete-food/:id', adminController.deleteFood);
 
 
 router.get('/food', adminController.getAllFood);

@@ -46,7 +46,7 @@ exports.getEditFood = async (req, res) => {
         if (!food) {
             return res.status(404).send('Food item not found');
         }
-        res.render('admin/editFood', { food });
+        res.render('admin/editFood', { food});
 
     }catch (error){
         console.error('Error fetching food item:', error);
