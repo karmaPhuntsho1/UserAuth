@@ -9,7 +9,7 @@ router.get('/dashboard', adminController.getAdminDashboard);
 router.get('/add-food', (req, res) => {
     res.render('admin/addFood');
 });
-router.post('/addFood', adminController.postaddFood);
+router.post('/add-food', adminController.postaddFood);
 
 
 router.get('/foodList', adminController.getAllFood);
@@ -20,6 +20,7 @@ router.post('/editFood/:id', adminController.postEditFood);
 router.post('/deleteFood/:id', adminController.deleteFood);
 
 
+router.get('/food', adminController.getAllFood);
 
 
 module.exports = router;

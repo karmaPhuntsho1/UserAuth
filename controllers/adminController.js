@@ -16,7 +16,7 @@ exports.getaddFood = (req, res) => {
             return res.render('admin/addFood', { message: 'All fields are required.' });
         }
         // Insert food item into the database
-        await db.none('INSERT INTO food (name, description, image_url, price) VALUES ($1, $2, $3, $4)', 
+        await db.none('INSERT INTO food_items (name, description, image_url, price) VALUES ($1, $2, $3, $4)', 
             [name, description, image_url, price]);
         
         res.redirect('/admin/food');
